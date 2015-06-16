@@ -12,7 +12,6 @@
   </properties>
   
   
-  
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -23,11 +22,40 @@
     </dependency>
   </dependencies>
   
+
+<!--<modules>
+    <module>server</module>
+    <module>client</module>
+</modules>
+http://www.mastertheboss.com/jboss-frameworks/maven-tutorials/jboss-maven/maven-multi-module-tutorial?showall=&start=1 -->
+  
   <scm>
 	<connection>scm:git:https://shegoj@github.com/shegoj/tyche100.git</connection>
 	<url>scm:git:http://shegoj@github.com/shegoj/tyche100.git</url>
 	<developerConnection>scm:git:http://shegoj@github.com/shegoj/tyche100.git</developerConnection>
     <tag>my-app1-1.3</tag>
   </scm>
-  
+  <profiles>
+  	<profile>
+  		<id>it-test</id>
+  		<activation>
+  		</activation>
+  		<build>
+  			<plugins>
+  				<plugin>
+  					<groupId>org.apache.maven.plugins</groupId>
+  					<artifactId>maven-surefire-plugin</artifactId>
+  					<version>2.4.2</version>
+					<configuration>
+					  	<property>
+  							<name>it-test</name>
+  							<value>true</value>
+  						</property>
+						<skipTests>${it-test}</skipTests>
+					</configuration>
+	  			</plugin>
+			</plugins>
+		</build>
+  	</profile>
+  </profiles>
 </project>
