@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.shegoj.app</groupId>
   <artifactId>my-app1</artifactId>
-  <packaging>jar</packaging>
-  <version>1.5-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <version>1.6-SNAPSHOT</version>
   <name>${project.artifactId}</name>
   
   <properties>
@@ -33,7 +34,7 @@ http://www.mastertheboss.com/jboss-frameworks/maven-tutorials/jboss-maven/maven-
 	<connection>scm:git:https://shegoj@github.com/shegoj/tyche100.git</connection>
 	<url>scm:git:http://shegoj@github.com/shegoj/tyche100.git</url>
 	<developerConnection>scm:git:http://shegoj@github.com/shegoj/tyche100.git</developerConnection>
-    <tag>my-app1-1.3</tag>
+    <tag>my-app1-1.5</tag>
   </scm>
   <profiles>
   	<profile>
@@ -58,4 +59,9 @@ http://www.mastertheboss.com/jboss-frameworks/maven-tutorials/jboss-maven/maven-
 		</build>
   	</profile>
   </profiles>
+  <modules>
+    <module>sub-app2</module>
+    <module>sub-app3</module>
+    <module>sub-app4</module>
+  </modules>
 </project>
