@@ -5,7 +5,7 @@
   <groupId>com.shegoj.app</groupId>
   <artifactId>my-app1</artifactId>
   <packaging>pom</packaging>
-  <version>1.6-SNAPSHOT</version>
+  <version>1.9-SNAPSHOT</version>
   <name>${project.artifactId}</name>
   
   <properties>
