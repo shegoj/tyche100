@@ -28,6 +28,7 @@
     <module>server</module>
     <module>client</module>
     <module>client</module>
+    <module>client</module>
 </modules>
 http://www.mastertheboss.com/jboss-frameworks/maven-tutorials/jboss-maven/maven-multi-module-tutorial?showall=&start=1 -->
   
